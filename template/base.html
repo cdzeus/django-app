@@ -1,0 +1,22 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Mon Site{% endblock %}</title>
+    <!-- Ajoutez ici vos liens vers les fichiers CSS, JS, etc. -->
+  </head>
+  <body>
+    <header>
+      <h1>Mon Site</h1>
+    </header>
+    <nav>
+      <!-- Ajoutez ici votre navigation commune à toutes les pages -->
+    </nav>
+    <main>{% block content %}{% endblock %}</main>
+    <footer>
+      <!-- Ajoutez ici votre pied de page commun à toutes les pages -->
+    </footer>
+  </body>
+</html>
